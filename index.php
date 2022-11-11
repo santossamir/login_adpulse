@@ -21,7 +21,8 @@
 			<div class="formBox">
 				
 				<div class="form">
-					<form  method="POST" id="myForm" onSubmit="handleSubmitForm(event)"> 	
+					<form  action="user_controller.php?acao=login" method="POST" id="myForm" > 	
+						<!--onSubmit="handleSubmitForm(event)"-->
 						<span>Sign In</span>
 						<div class="username">
 							<img src="./public/img/user.png">
@@ -33,6 +34,20 @@
 						</div>
 						<button type="submit">Sign In</button>
 					</form>
+					<?php
+						if(isset($_GET['login']) && $_GET['login'] == 'Erro'){
+							
+					?>
+						<div class="erroReturn">
+							<span>Invalid username or password.</span>              
+						</div>
+					<?php } else if(isset($_GET['login']) && $_GET['login'] == 'Success'){
+					?>
+						<div class="successReturn">
+							<span >I'M THE MASTER OF MY DOMAIN!</span>
+						</div>
+					<?php }
+					?>
 				</div>
 			</div>
 		</div> 
