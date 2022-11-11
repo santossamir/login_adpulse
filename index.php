@@ -3,24 +3,24 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="public/css/style.css">
     <title>Login ADPULSE</title>
+
+	<!--Font family-->
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 	</style>
   </head>
-
   	<body>
 		<div class="container">
-
 			<div class="welcome">
 				<div class="text">
 					<span>Welcome back!</span>
 					<p>You can sing in to access with your existing account.</p>
 				</div>	
-			
 			</div>
 			<div class="formBox">
-				
 				<div class="form">
+
+					<!--Start of form-->
 					<form method="POST" id="myForm" onSubmit="handleSubmitForm(event)"> 	
 						<span>Sign In</span>
 						<div class="username">
@@ -33,6 +33,9 @@
 						</div>
 						<button type="submit">Sign In</button>
 					</form>
+					<!--Finish of form-->
+
+					<!--Start Erro and Success return on login-->
 					<?php
 						if(isset($_GET['login']) && $_GET['login'] == 'Erro'){
 							
@@ -47,6 +50,7 @@
 						</div>
 					<?php }
 					?>
+					<!--Finish Erro and Success return on login-->
 				</div>
 			</div>
 		</div> 
