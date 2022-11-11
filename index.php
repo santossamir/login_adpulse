@@ -21,8 +21,7 @@
 			<div class="formBox">
 				
 				<div class="form">
-					<form  action="user_controller.php?acao=login" method="POST" id="myForm" > 	
-						<!--onSubmit="handleSubmitForm(event)"-->
+					<form method="POST" id="myForm" onSubmit="handleSubmitForm(event)"> 	
 						<span>Sign In</span>
 						<div class="username">
 							<img src="./public/img/user.png">
