@@ -1,0 +1,120 @@
+body{
+    background-color: #9400D3;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+}
+
+.welcome{
+    width: 60%;
+    height: 450px;
+    color: white;
+    border-radius: 15px 0px 0px 15px;
+    background-image: url("../img/background_2.jpg");
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.text{
+    margin-top: 125px;
+    width: 60%;
+}
+
+.text span{
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:500;
+    font-size: 20px;
+    margin: 0;
+}
+
+.formBox{
+    width: 40%;
+    height: 450px;
+    border-radius: 0px 15px 15px 0px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form{
+    margin-top: 90px;
+    width: 60%;
+}
+
+#myForm span{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:900;
+    font-size: 40px;
+    color: #696969;
+}
+
+.username, .password{
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #F1F1F1;
+    border-radius: 40px;
+    margin-top:10px;  
+}
+
+.username input, .password input{
+    width: 80%;
+    height: 50px;
+    border: none;
+    background: transparent;
+    
+}
+
+.username input:focus, .password input:focus{
+    outline: 0; 
+}
+
+#myForm button{
+    width: 100%;
+    height: 50px;
+    background:radial-gradient(rgb(178, 162, 185), #4B0082);
+    border-radius: 40px;
+    border: none;
+    color:#F1F1F1;
+    font-size: 16px;
+    letter-spacing: 0.1vh;
+    margin-top: 40px;
+    cursor: pointer; 
+}
+
+#myForm ::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #A3A2A2;
+}
+
+.username img, .password img{
+    margin-left: 20px;
+}
+
+.erroReturn span{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:600;
+    font-size: 18px;
+    color: rgb(236, 34, 34);
+    margin-left: 5%;
+}
+
+.successReturn span{
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:600;
+    font-size: 17px;
+    color: rgb(62, 190, 23);
+}

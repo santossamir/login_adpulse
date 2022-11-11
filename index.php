@@ -1,11 +1,43 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="public/css/style.css">
     <title>Login ADPULSE</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+	</style>
   </head>
 
-  <body>
-    <h1>Hello, Adpulse!</h1>
-  </body>
+  	<body>
+		<div class="container">
+
+			<div class="welcome">
+				<div class="text">
+					<span>Welcome back!</span>
+					<p>You can sing in to access with your existing account.</p>
+				</div>	
+			
+			</div>
+			<div class="formBox">
+				
+				<div class="form">
+					<form  method="POST" id="myForm" onSubmit="handleSubmitForm(event)"> 	
+						<span>Sign In</span>
+						<div class="username">
+							<img src="./public/img/user.png">
+							<input id="username" name="username" type="text" placeholder="Username or email" required> 
+						</div>
+						<div class="password">
+							<img src="./public/img/password.png">
+							<input id="password" name="password" type="password" placeholder="Password" required>
+						</div>
+						<button type="submit">Sign In</button>
+					</form>
+				</div>
+			</div>
+		</div> 
+  	</body>
+  	<script src="public/js/index.js">
+		
+	</script>
 </html>
