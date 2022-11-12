@@ -6,10 +6,10 @@ async function handleSubmitForm(e){
 
     let xhr = new XMLHttpRequest();
     xhr.overrideMimeType('text/xml');
+    
     xhr.onload = () => {
         if(xhr.readyState === 4){
             if(xhr.status === 200){
-                console.log('Status 200');
                 console.log(xhr);
                 window.location.href = xhr.responseURL; 
             }else{

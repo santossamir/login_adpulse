@@ -1,6 +1,5 @@
 <?php
-     class UseService{
-
+    class UseService{
         private $conexao;
         private $id_user;
         private $name_user;
